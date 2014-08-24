@@ -1,0 +1,263 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans';
+	background: rgb(65,75,90);
+}
+
+a, a:hover {text-decoration: none;}
+
+#interface {
+	width: 100%;
+	max-width: 1200px;
+	padding: 100px 0 50px;
+	margin: auto;
+}
+
+header {
+	padding: 25px;
+	background: rgba(0,0,0,.5);
+}
+
+header #logo {
+	padding: 5px 0 0 0;
+}
+
+header #logo a {
+	color: #EEE;
+	font-size: 30px;
+	font-weight: 300 !important; 
+	text-transform: uppercase;
+}
+
+main {
+	padding: 25px;
+	background: rgba(0,0,0,.3);
+	
+	-webkit-transition: all .1s linear;
+	   -moz-transition: all .1s linear;
+			transition: all .1s linear;
+	
+}
+main.uk-active {
+	background: rgba(33,33,33,1);
+}
+
+#options {
+	padding: 25px;
+	background: rgba(0,0,0,.5);
+	color: #EEE !important;
+}
+
+#log {
+	padding: 25px;
+	background: rgba(0,0,0,.4);
+	color: #EEE !important;
+}
+
+
+.badge {
+	margin: 0 5px 0 0;
+	text-transform: uppercase;
+}
+
+.badge-bug {color: rgb(255,51,51);}
+.badge-fix {color: rgb(102,153,255)}
+.badge-update {color: rgb(153,255,102);}
+.badge-note {color: #CCC;}
+.badge-doc {color: #999;}
+.badge-todo {color: #F93;}
+
+.log-entry-path-line {color: #888;}
+
+
+/*
+ * ##################################################
+ * SCROLLBAR (for webkit browsers) ##################
+ * ##################################################
+ */
+ 
+::-webkit-scrollbar {
+	width: 0;
+	height: 10px;
+	background-color: #333;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+	height: 0;
+	display: block;
+	background-color: #111;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #111;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #222;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+	background-color: rgb(232,71,47) !important;
+}
+/*
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background: #222;
+	font-family: sans-serif;
+}
+
+textarea {
+	height: 50px;
+	display: inline;
+	width: 525px;
+}
+
+.alright {
+	text-align: right;
+}
+
+#projectName a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#content {
+	position: fixed;
+	width: 600px;
+	text-align: left;
+	top: 50px;
+	left: 50%;
+	margin-left: -315px;
+	color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+#options {
+	width: 630px;
+	margin: 260px auto 0 auto;
+	text-align: right;
+	color: #000;
+	font-size: small;
+}
+
+#options input {
+	width: 200px;
+}
+
+#options a {
+	padding-right: 15px;
+}
+
+#options a:link,
+#options a:visited {
+	color: #636363;
+	text-decoration: none;
+}
+
+#options a:hover {
+	color: #858585;
+	text-decoration: none;
+}
+
+#log {
+	width: 600px;
+	margin: 0 auto 50px auto;
+	text-align: left;
+	padding: 0 15px 15px 15px;
+	color: #000;
+	font-size: small;
+}
+
+.tbl {
+	border: none;
+	width: 100%;
+}
+
+.tbl td {
+	padding: 3px;
+	margin: 0;
+}
+
+.error {
+	color: red;
+}
+
+ul {
+	padding-left: 10px;
+}
+
+ul li {
+	margin-bottom: 25px;
+}
+
+.entry {
+	font-size: 15px;
+}
+
+ol {
+	margin-top: 10px;
+}
+
+ol li {
+	margin-bottom: 10px;
+}
+
+.bug {
+	color: #F00;
+	font-weight: 600;
+}
+
+.fix {
+	color: #090;
+	font-weight: 600;
+}
+
+.update {
+	color: #00F;
+	font-weight: 600;
+}
+
+.note {
+	color: #555;
+	font-weight: 600;
+}
+
+.doc {
+	color: #000;
+	font-weight: 600;
+}
+
+.todo {
+	color: #F60;
+	font-weight: 600;
+}
+
+.unknown {
+	color: #ad07ad;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.path {
+	color: #666;
+}
+
+.re {
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+p {
+	margin-top: 5px;
+}
