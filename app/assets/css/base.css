@@ -14,11 +14,14 @@ body {
 a, a:hover {text-decoration: none;}
 
 #interface {
-	width: 100%;
+	width: 80%;
 	max-width: 1200px;
 	padding: 100px 0 50px;
 	margin: auto;
 }
+
+body.login #interface {max-width: 400px;}
+body.login header {text-align: center;}
 
 header {
 	padding: 25px;

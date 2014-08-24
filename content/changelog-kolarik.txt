@@ -1,6 +1,0 @@
-
-2014-08-24  Kolarik v6  5.7.0  Joe Hana  <j.hana@anex.at>
-	* [[Update] : [Update] : : : search.php : search.php:33 : Sample Update Description
-	* [Bug] : [[Bug] : : hsdgsdfs : hsdgsdfs:dsfds : dsfdsdfs
-	* [[Update] : [Update] : rasdfasdf : rasdfasdf:5445 : fdsafdsjdgfjdjgfd
-	* [Fix] : dfhjdfhgfdgf:65675 : hfdhdfhdgfdgfd
