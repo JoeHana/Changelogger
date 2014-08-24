@@ -12,7 +12,7 @@
  */
 
 if( !defined( 'DEV_MODE' ) )
-	define( 'DEV_MODE', true ); // can be true or false
+	define( 'DEV_MODE', false ); // can be true or false
 
 if( DEV_MODE == true ) {
 	error_reporting( E_ALL );

@@ -11,12 +11,31 @@
  *	**************************************************
  */
 
+$errorstack = array();
+
+$x = isset( $_GET['x'] ) ? $_GET['x'] : FALSE;
+
+if( isset( $_POST['password'] ) ) {
+	
+	if( $_POST['password'] == PASSWORD ) { 
+		setcookie( APP_TITLE . '_login', sha256( PASSWORD . $_SERVER['REMOTE_ADDR'] ), NULL, '/', '.' . str_ireplace( 'www.', '', $_SERVER['SERVER_NAME'] ) ); 
+		header( "Location: " . $_SERVER['PHP_SELF'] ); 
+		exit;
+	} else { 
+		header( "Location: " . $_SERVER['PHP_SELF'] . "?x=wp" ); 
+		exit; 
+	}
+	
+}
+
 function changelogger_info( $data = '' ) {
 	
 	if( $data == 'name' ) {
 		$data = APP_TITLE;
 	} elseif( $data == 'version' ) {
 		$data = APP_VERSION;
+	} elseif( $data == 'url' ) {
+		$data = APP_BASE_URL;
 	} else {
 		$data = '';
 	}
@@ -51,7 +70,7 @@ function changelogger_output_errors( $retvar = false ) {
 		$retval = '';
 	
 	if( changelogger_errored() ) {
-		$retval .= '<span class="error"><strong>Error:</strong> ' . implode( ', ', $errorstack ) . '.</span>' . "\n";
+		$retval .= '<div class="uk-alert uk-alert-warning" data-uk-alert><a href="" class="uk-alert-close uk-close"></a><p>' . implode( ', ', $errorstack ) . '</p></div>';
 	}
 	
 	if( $retvar )

@@ -15,9 +15,14 @@ a, a:hover {text-decoration: none;}
 
 #interface {
 	width: 80%;
-	max-width: 1200px;
-	padding: 100px 0 50px;
-	margin: auto;
+	margin: 100px auto 50px;
+}
+
+#messages {
+	width: 80%;
+	position: absolute;
+	top: 0;
+	left: 10%;
 }
 
 body.login #interface {max-width: 400px;}

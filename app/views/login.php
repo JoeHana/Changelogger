@@ -1,6 +1,6 @@
 <body class="login">
 
-    <div id="interface">
+    <div id="interface" class="uk-animation-scale-up">
         
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="uk-form">
             
@@ -20,7 +20,7 @@
             
                 <div class="uk-grid">
                     <div class="uk-width-1-1">
-                        <input type="password" name="password" placeholder="Password" class="uk-width-1-1 uk-form-large" />
+                        <input type="password" name="password" placeholder="Password" required class="uk-width-1-1 uk-form-large" />
                         <input type="submit" name="submit" value="Login" class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-margin-top"/>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     </div>
 
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="<?php echo APP_BASE_URL; ?>/app/assets/js/uikit/uikit.min.js"></script>
+    <script src="<?php echo changelogger_info( 'url' ); ?>/app/assets/js/uikit/uikit.min.js"></script>
 
 </body>
 </html>

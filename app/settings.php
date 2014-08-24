@@ -117,26 +117,3 @@ function changelogger_types() {
 	return $types;
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-// old settings
-//if(!isset($projectName)) $projectName = APP_TITLE;
-//if(!isset($ChangeLogPath)) $ChangeLogPath = CHANGELOG_PATH;
-//
-//if( MODE == 'private' ) {
-//	//if(!isset($passwordRequired)) $passwordRequired = true;
-//} else {
-//	//if(!isset($passwordRequired)) $passwordRequired = false;
-//}
-//
-//if(!isset($password)) $password = PASSWORD;
-//if(!isset($salt)) $salt = SALT;
